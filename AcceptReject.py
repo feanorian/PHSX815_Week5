@@ -75,5 +75,9 @@ if __name__ == "__main__":
   plt.text(.2, 1.75, f'Sample Size {str(size)}' + '\n' + f'Efficency: {accept.mean():.2f}')
   plt.xlim(0, 1)
   plt.ylim(0, 2)
+  
+  # Uncomment to save figures
+  #plt.savefig(f'{str(size)}_samples{str(reg)}', dpi=600)
+
   plt.show()
 
